@@ -26,8 +26,12 @@ ostream& operator<< (ostream& o,Date da)
 }
 
 int main(){
-    Date day;
+    Date day(1,2,3);
+    Date d;
+    d = day;
     day.print();
-    cout << day;
+    cout << day << endl;
+    cout << d << endl;
+    cout << &d << ' ' << &day;
     return 0;
 }
